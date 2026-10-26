@@ -1,0 +1,15 @@
+deep-rl-arabic
+Copyright 2026 Mohamed Ashraf Mostafa
+
+This repository contains Arabic adaptations of notebooks and material from the
+Hugging Face Deep Reinforcement Learning Course:
+  https://huggingface.co/learn/deep-rl-course
+  https://github.com/huggingface/deep-rl-class
+which is licensed under the Apache License, Version 2.0.
+
+Changes made in this repository: explanations translated into and written in
+Arabic, code cells edited and extended where noted inside each notebook, and the
+notebooks executed with their outputs saved.
+
+The Cairo font in assets/fonts is licensed under the SIL Open Font License 1.1
+(see assets/fonts/OFL.txt).

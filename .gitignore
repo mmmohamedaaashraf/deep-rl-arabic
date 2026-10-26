@@ -1,0 +1,13 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+# training artefacts that belong on the Hugging Face Hub, not in git
+logs/
+runs/
+wandb/
+*.zip
+*.pt
+*.pth
+*.onnx
