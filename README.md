@@ -18,39 +18,44 @@
 
 كل نوتبوكس ليها حلقة فيديو بتشرحها خطوة بخطوة، والروابط هتتضاف جنب كل وحدة أول ما تتنشر.
 
+## الحلقات
+
+| # | الحلقة | الوحدة في الكورس | النوتبوك |
+|---|---|---|---|
+| 1 | يعني إيه `Reinforcement Learning`؟ الـ `agent` والـ `environment` والـ `RL loop` على `LunarLander` | Unit 1 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mmmohamedaaashraf/deep-rl-arabic/blob/main/ep01-what-is-rl/ep01_what_is_rl.ipynb) · [GitHub](ep01-what-is-rl/ep01_what_is_rl.ipynb) |
+| 2 | الـ `Reward` والـ `Return` والـ `Discounting`، ومين الـ `PPO` ده | Unit 1 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mmmohamedaaashraf/deep-rl-arabic/blob/main/ep02-discounting/ep02_discounting.ipynb) · [GitHub](ep02-discounting/ep02_discounting.ipynb) |
+
+فيديوهات الحلقات على [YouTube](https://www.youtube.com/@MmmohamedAaashraf)، وحلقة جديدة بتنزل كل يوم إن شاء الله.
+
 ## الخطة
 
-| الوحدة | الموضوع | المشروع | الحالة |
-|---|---|---|---|
-| 0 | مقدمة الكورس | تجهيز البيئة | ⏳ قريبًا |
-| 1 | أساسيات `Deep RL` | `LunarLander` بـ `PPO` و `Stable-Baselines3` | ⏳ قريبًا |
-| بونص 1 | `Huggy` | تدريب كلب `Huggy` بـ `Unity ML-Agents` | ⏳ قريبًا |
-| 2 | `Q-Learning` | `FrozenLake` و `Taxi` من الصفر | ⏳ قريبًا |
-| 3 | `Deep Q-Learning` | `Space Invaders` من `Atari` | ⏳ قريبًا |
-| بونص 2 | ضبط الـ `hyperparameters` | `Optuna` | ⏳ قريبًا |
-| 4 | `Policy Gradient` | `REINFORCE` بـ `PyTorch` على `CartPole` و `Pixelcopter` | ⏳ قريبًا |
-| 5 | `Unity ML-Agents` | `SnowballTarget` و `Pyramids` | ⏳ قريبًا |
-| 6 | `Actor-Critic` | `A2C` على `panda-gym` | ⏳ قريبًا |
-| 7 | `Multi-Agent` و `self-play` | `SoccerTwos` | ⏳ قريبًا |
-| 8 | `PPO` | `PPO` من الصفر بـ `CleanRL`، و `Sample Factory` على `ViZDoom` | ⏳ قريبًا |
+السلسلة ماشية مع وحدات الكورس بالترتيب، وبين كل موضوع والتاني حلقة تطبيقية فيها مشروع كامل من الصفر للآخر:
 
-وبين كل وحدة والتانية فيه نوتبوكس مشروع عملي كامل من الصفر للآخر.
+| الوحدة | الموضوع | المشروع |
+|---|---|---|
+| 1 | أساسيات `Deep RL` | `LunarLander` بـ `PPO` و `Stable-Baselines3` |
+| بونص 1 | `Huggy` | تدريب كلب `Huggy` بـ `Unity ML-Agents` |
+| 2 | `Q-Learning` | `FrozenLake` و `Taxi` من الصفر |
+| 3 | `Deep Q-Learning` | `Space Invaders` من `Atari` |
+| بونص 2 | ضبط الـ `hyperparameters` | `Optuna` |
+| 4 | `Policy Gradient` | `REINFORCE` بـ `PyTorch` على `CartPole` و `Pixelcopter` |
+| 5 | `Unity ML-Agents` | `SnowballTarget` و `Pyramids` |
+| 6 | `Actor-Critic` | `A2C` على `panda-gym` |
+| 7 | `Multi-Agent` و `self-play` | `SoccerTwos` |
+| 8 | `PPO` | `PPO` من الصفر بـ `CleanRL`، و `Sample Factory` على `ViZDoom` |
 
 ## تشغيل النوتبوكس
 
-أسهل طريقة إنك تفتح النوتبوكس على `Google Colab` وتختار `GPU` من:
+أسهل طريقة: دوس على زرار `Open in Colab` جنب الحلقة، وبعدين `Runtime > Run all`. أول خلية بتسطّب المكتبات لوحدها،
+والحلقات الأولى شغالة على الـ `CPU` العادي.
 
-```
-Runtime → Change runtime type → T4 GPU
-```
-
-كل نوتبوكس بتثبّت المكتبات اللي محتاجاها في أول خلية. ولو هتشغّل على جهازك:
+ولو هتشغّل على جهازك:
 
 ```bash
 git clone https://github.com/mmmohamedaaashraf/deep-rl-arabic.git
 cd deep-rl-arabic
-python3 -m venv .venv && source .venv/bin/activate
-pip install jupyterlab
+pip install swig
+pip install "gymnasium[box2d]" stable-baselines3 imageio imageio-ffmpeg matplotlib jupyterlab
 jupyter lab
 ```
 
@@ -58,10 +63,11 @@ jupyter lab
 
 ```
 deep-rl-arabic/
-├── notebooks/       نوتبوكس كل وحدة في فولدر باسمها (unit1/، unit2/، …)
-├── assets/          صور الريبو والخطوط
-├── LICENSE          Apache License 2.0
-└── NOTICE           مصدر المحتوى الأصلي والتعديلات
+├── ep01-what-is-rl/     نوتبوك الحلقة 1 + موديل الـ PPO المتدرب + train_ppo.py
+├── ep02-discounting/    نوتبوك الحلقة 2
+├── assets/             صور الريبو والخطوط
+├── LICENSE             Apache License 2.0
+└── NOTICE              مصدر المحتوى الأصلي والتعديلات
 ```
 
 ## المصدر والرخصة
@@ -70,5 +76,10 @@ deep-rl-arabic/
 [`huggingface/deep-rl-class`](https://github.com/huggingface/deep-rl-class)، المنشور برخصة `Apache-2.0`.
 النوتبوكس هنا مترجمة ومشروحة بالعربي، ومعدّلة ومتشغّلة بنتايجها، والتفاصيل في ملف [`NOTICE`](NOTICE).
 الريبو كله منشور برخصة [`Apache-2.0`](LICENSE). خط `Cairo` المستخدم في الصور منشور برخصة `SIL OFL 1.1`.
+
+## عندك سؤال؟
+
+اكتبه في كومنت على الفيديو، أو ابعتهولي:
+[LinkedIn](https://www.linkedin.com/in/mohamed-ashraf0) · [Facebook](https://www.facebook.com/MohamedAshrafIN) · [YouTube](https://www.youtube.com/@MmmohamedAaashraf)
 
 <p align="center"><sub>Mohamed Ashraf Mostafa · Petroleum & Robotics Engineer</sub></p>
