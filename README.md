@@ -25,24 +25,23 @@
 | 1 | يعني إيه `Reinforcement Learning`؟ الـ `agent` والـ `environment` والـ `RL loop` على `LunarLander` | Unit 1 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mmmohamedaaashraf/deep-rl-arabic/blob/main/ep01-what-is-rl/ep01_what_is_rl.ipynb) · [GitHub](ep01-what-is-rl/ep01_what_is_rl.ipynb) |
 | 2 | الـ `Reward` والـ `Return` والـ `Discounting`، ومين الـ `PPO` ده | Unit 1 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mmmohamedaaashraf/deep-rl-arabic/blob/main/ep02-discounting/ep02_discounting.ipynb) · [GitHub](ep02-discounting/ep02_discounting.ipynb) |
 
-فيديوهات الحلقات على [YouTube](https://www.youtube.com/@MmmohamedAaashraf)، وحلقة جديدة بتنزل كل يوم إن شاء الله.
+فيديوهات الحلقات على [YouTube](https://www.youtube.com/@MmmohamedAaashraf)، وبننزل حلقات جديدة بشكل مستمر إن شاء الله.
 
 ## الخطة
 
-السلسلة ماشية مع وحدات الكورس بالترتيب، وبين كل موضوع والتاني حلقة تطبيقية فيها مشروع كامل من الصفر للآخر:
+8 وحدات (20 حلقة). كل وحدة: حلقة أو اتنين نظري بأمثلة كود، وبعدها حلقة مشروع كامل من الصفر للآخر.
 
 | الوحدة | الموضوع | المشروع |
 |---|---|---|
-| 1 | أساسيات `Deep RL` | `LunarLander` بـ `PPO` و `Stable-Baselines3` |
-| بونص 1 | `Huggy` | تدريب كلب `Huggy` بـ `Unity ML-Agents` |
-| 2 | `Q-Learning` | `FrozenLake` و `Taxi` من الصفر |
-| 3 | `Deep Q-Learning` | `Space Invaders` من `Atari` |
-| بونص 2 | ضبط الـ `hyperparameters` | `Optuna` |
+| 1 | أساسيات `Deep RL` | `PPO` على `LunarLander` بـ `Stable-Baselines3` |
+| 2 | `Q-Learning` | `FrozenLake` و `Taxi` من الصفر بـ `NumPy` |
+| 3 | `Deep Q-Learning` | `DQN` على `Space Invaders` + ضبط بـ `Optuna` |
 | 4 | `Policy Gradient` | `REINFORCE` بـ `PyTorch` على `CartPole` و `Pixelcopter` |
-| 5 | `Unity ML-Agents` | `SnowballTarget` و `Pyramids` |
-| 6 | `Actor-Critic` | `A2C` على `panda-gym` |
-| 7 | `Multi-Agent` و `self-play` | `SoccerTwos` |
-| 8 | `PPO` | `PPO` من الصفر بـ `CleanRL`، و `Sample Factory` على `ViZDoom` |
+| 5 | `Actor-Critic` و `PPO` | `PPO` من الصفر بأسلوب `CleanRL` على `LunarLander` |
+| 6 | الروبوتات والتحكم المستمر | ذراع `Panda` بـ `SAC` + `HER`، وروبوت `MuJoCo` بيمشي |
+| 7 | `RL` للنماذج اللغوية | تدريب `Qwen` بـ `GRPO` و `TRL` |
+| 8 | المتقدم + مشروع التخرج | بيئة حفر من الصفر بـ `Gymnasium` وتدريب `PPO` و `SAC` |
+| بونص | `Multi-Agent` و `self-play` | `Unity ML-Agents`: `Pyramids` و `SoccerTwos` |
 
 ## تشغيل النوتبوكس
 
