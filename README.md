@@ -24,6 +24,7 @@
 |---|---|---|---|
 | 1 | يعني إيه `Reinforcement Learning`؟ الـ `agent` والـ `environment` والـ `RL loop` على `LunarLander` | Unit 1 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mmmohamedaaashraf/deep-rl-arabic/blob/main/ep01-what-is-rl/ep01_what_is_rl.ipynb) · [GitHub](ep01-what-is-rl/ep01_what_is_rl.ipynb) |
 | 2 | الـ `Reward` والـ `Return` والـ `Discounting`، ومين الـ `PPO` ده | Unit 1 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mmmohamedaaashraf/deep-rl-arabic/blob/main/ep02-discounting/ep02_discounting.ipynb) · [GitHub](ep02-discounting/ep02_discounting.ipynb) |
+| 3 | `Exploration` ولا `Exploitation`؟ الـ `bandit` والـ `epsilon-greedy` والـ `MDP` | Unit 1 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mmmohamedaaashraf/deep-rl-arabic/blob/main/ep03-exploration/ep03_exploration.ipynb) · [GitHub](ep03-exploration/ep03_exploration.ipynb) |
 
 فيديوهات الحلقات على [YouTube](https://www.youtube.com/@MmmohamedAaashraf)، وبننزل حلقات جديدة بشكل مستمر إن شاء الله.
 
@@ -64,6 +65,7 @@ jupyter lab
 deep-rl-arabic/
 ├── ep01-what-is-rl/     نوتبوك الحلقة 1 + موديل الـ PPO المتدرب + train_ppo.py
 ├── ep02-discounting/    نوتبوك الحلقة 2
+├── ep03-exploration/    نوتبوك الحلقة 3
 ├── assets/             صور الريبو والخطوط
 ├── LICENSE             Apache License 2.0
 └── NOTICE              مصدر المحتوى الأصلي والتعديلات
