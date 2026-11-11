@@ -25,6 +25,7 @@
 | 1 | يعني إيه `Reinforcement Learning`؟ الـ `agent` والـ `environment` والـ `RL loop` على `LunarLander` | Unit 1 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mmmohamedaaashraf/deep-rl-arabic/blob/main/ep01-what-is-rl/ep01_what_is_rl.ipynb) · [GitHub](ep01-what-is-rl/ep01_what_is_rl.ipynb) |
 | 2 | الـ `Reward` والـ `Return` والـ `Discounting`، ومين الـ `PPO` ده | Unit 1 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mmmohamedaaashraf/deep-rl-arabic/blob/main/ep02-discounting/ep02_discounting.ipynb) · [GitHub](ep02-discounting/ep02_discounting.ipynb) |
 | 3 | `Exploration` ولا `Exploitation`؟ الـ `bandit` والـ `epsilon-greedy` والـ `MDP` | Unit 1 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mmmohamedaaashraf/deep-rl-arabic/blob/main/ep03-exploration/ep03_exploration.ipynb) · [GitHub](ep03-exploration/ep03_exploration.ipynb) |
+| 4 | مشروع: أول `agent` متدرب، `PPO` على `LunarLander` من الصفر لحد الهبوط | Unit 1 (hands-on) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mmmohamedaaashraf/deep-rl-arabic/blob/main/ep04-first-trained-agent/ep04_first_trained_agent.ipynb) · [GitHub](ep04-first-trained-agent/ep04_first_trained_agent.ipynb) |
 
 فيديوهات الحلقات على [YouTube](https://www.youtube.com/@MmmohamedAaashraf)، وبننزل حلقات جديدة بشكل مستمر إن شاء الله.
 
@@ -66,6 +67,7 @@ deep-rl-arabic/
 ├── ep01-what-is-rl/     نوتبوك الحلقة 1 + موديل الـ PPO المتدرب + train_ppo.py
 ├── ep02-discounting/    نوتبوك الحلقة 2
 ├── ep03-exploration/    نوتبوك الحلقة 3
+├── ep04-first-trained-agent/  نوتبوك الحلقة 4 (مشروع): تدريب وتقييم PPO
 ├── assets/             صور الريبو والخطوط
 ├── LICENSE             Apache License 2.0
 └── NOTICE              مصدر المحتوى الأصلي والتعديلات
